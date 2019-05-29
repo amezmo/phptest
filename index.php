@@ -1,5 +1,7 @@
 <?php
 
+error_reporting(E_ALL);
+
 try {
     $DBH = new PDO("mysql:host=localhost", "ryan", "password");
     $DBH->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
